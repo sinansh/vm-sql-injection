@@ -1,4 +1,6 @@
 ﻿<?php
+require_once("header.php");
+
 $lnk = mysql_connect("localhost", "londravm_A", "londravm_A");
 $db = mysql_select_db("", $lnk);
 if(!preg_match('/^[0-9]+/', $_GET["id"])){
