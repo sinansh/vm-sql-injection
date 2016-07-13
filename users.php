@@ -1,7 +1,7 @@
 <?php
-require_once("db.php");
 require_once("header.php");
-
+$lnk = mysql_connect("localhost", "londravm", "londravm");
+$db = mysql_select_db("", $lnk);
 if(!preg_match('/^[0-9]+/', $_GET["id"])){
   die("int değer gönder hacı :D ");
 }
