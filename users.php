@@ -1,4 +1,6 @@
 <?php
+require_once("db.php");
+require_once("header.php");
 
 if(!preg_match('/^[0-9]+/', $_GET["id"])){
   die("int değer gönder hacı :D ");
@@ -25,5 +27,7 @@ while($row = mysql_fetch_assoc($result)){
   echo "<td>".$row['username']."</td>";
   echo "</tr>";
 }
+}
+require_once("footer.php");
 
 ?>
